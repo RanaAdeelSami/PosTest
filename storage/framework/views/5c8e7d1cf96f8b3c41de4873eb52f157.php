@@ -1,0 +1,9 @@
+# Laravel Excel
+
+- Use ___SINGLE_BACKTICK___maatwebsite/excel___SINGLE_BACKTICK___ for spreadsheet exports, imports, queued spreadsheet work, CSV handling, and PhpSpreadsheet integration in Laravel applications.
+- Prefer explicit export/import classes with package concerns over ad-hoc spreadsheet generation in controllers, jobs, or commands.
+- Activate the ___SINGLE_BACKTICK___laravel-excel___SINGLE_BACKTICK___ skill when working with ___SINGLE_BACKTICK___Excel::download()___SINGLE_BACKTICK___, ___SINGLE_BACKTICK___Excel::store()___SINGLE_BACKTICK___, ___SINGLE_BACKTICK___Excel::queue()___SINGLE_BACKTICK___, ___SINGLE_BACKTICK___Excel::raw()___SINGLE_BACKTICK___, ___SINGLE_BACKTICK___Excel::import()___SINGLE_BACKTICK___, ___SINGLE_BACKTICK___Excel::toArray()___SINGLE_BACKTICK___, ___SINGLE_BACKTICK___Excel::toCollection()___SINGLE_BACKTICK___, export/import concerns, queued imports/exports, validation, CSV settings, styling, events, formulas, charts, drawings, multiple sheets, mapped cells, macros, config, cache, transactions, temporary files, or ___SINGLE_BACKTICK___Excel::fake()___SINGLE_BACKTICK___.
+- For broad docs, all-feature tasks, or missing-feature audits, use the skill's ___SINGLE_BACKTICK___references/package.md___SINGLE_BACKTICK___ feature matrix before answering.
+- For large datasets, prefer ___SINGLE_BACKTICK___FromQuery___SINGLE_BACKTICK___ with queued exports or ___SINGLE_BACKTICK___WithChunkReading___SINGLE_BACKTICK___ and ___SINGLE_BACKTICK___WithBatchInserts___SINGLE_BACKTICK___ for imports.
+- Test spreadsheet behavior with ___SINGLE_BACKTICK___Excel::fake()___SINGLE_BACKTICK___ when asserting dispatch/download/store/import intent, and inspect generated files only when cell contents, formatting, sheets, or writer behavior must be proven.
+<?php /**PATH C:\laragon\www\Laravel\PosTest\storage\framework\views/85bd6680b3b3548dbc420c3b1d2c7556.blade.php ENDPATH**/ ?>

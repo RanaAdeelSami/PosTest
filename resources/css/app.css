@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    color: #1a1a1a;
+}
+
+/* Sidebar Custom Scrollbar */
+.sidebar-nav::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+    background: #e5e7eb;
+    border-radius: 2px;
+}
+
+/* Smooth Transitions */
+button, a {
+    transition: all 0.15s ease;
+}
+
+/* Custom Utility Classes */
+@layer components {
+    .btn-primary {
+        @apply bg-primary-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-600 transition;
+    }
+
+    .btn-navy {
+        @apply bg-navy-900 text-white px-4 py-2 rounded-lg font-semibold hover:bg-navy-800 transition;
+    }
+
+    .card {
+        @apply bg-white rounded-2xl shadow-sm;
+    }
+
+    .input {
+        @apply w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm bg-gray-50 focus:outline-none focus:border-primary-500 focus:bg-white transition;
+    }
+}
